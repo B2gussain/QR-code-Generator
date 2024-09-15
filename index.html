@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR_Code_Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="front">
-        <div id="text">
-            <br><br><br><br>
-        <div class="sp"><span id="element"></span></div>
+    <div class="main">
+        <br><br><br><br><br><br><br>
+<center>
+    <div  id="ineer">
+        <h1 class="hide">QR-Code</h1>
+        <h2 class="hide">Generator</h2>
+        <div class="in hide">
+            <input type="text" placeholder="Enter URL:" color="black" id="qr_text">
         </div>
-        <div class="acr"><a href="main.html">Start</a></div>
+        <button class="hide" id="generate">Create QR</button>
+        <br>
+        <img alt="" title="" id="qr_image" class="second" download/>
+        <button id="reset"class="second" >Reset</button>
+        </div>
+
+</center>
+      
     </div>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-          strings: ['Try This<br>QR-Code Generator', '&amp;<br>Make your Own<br>QR-Code. '],
-          typeSpeed: 60,
-          loop:true
-        });
-      </script>
+    <script src=" script.js"></script>
 </body>
+
 </html>
